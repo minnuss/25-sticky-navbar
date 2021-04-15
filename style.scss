@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+// SCROLL PADDING FOR STICKY NAVBAR - IT RESERVE SPACE FOR SCROLLING
+:root {
+  scroll-padding-top: 70px;
+}
+
 %section {
   width: 100%;
   margin: 0 auto;

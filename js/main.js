@@ -1,9 +1,9 @@
 // MOBILE HAMB MENU
-const hmabBtn = document.querySelector('.hamb-btn');
+const hambBtn = document.querySelector('.hamb-btn');
 const ulList = document.querySelector('.navbar__content__nav__container__ul');
 
-hmabBtn.addEventListener('click', () => {
-    hmabBtn.classList.toggle('active');
+hambBtn.addEventListener('click', () => {
+    hambBtn.classList.toggle('active');
     ulList.classList.toggle('active');
 })
 
@@ -71,5 +71,13 @@ links.forEach(link => {
             link.classList.remove('current');
         })
         link.classList.add('current');
+    })
+})
+
+// IF MENU LINK IS CLICKED, CLOSE THE MENU
+
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        hambBtn.click()
     })
 })
